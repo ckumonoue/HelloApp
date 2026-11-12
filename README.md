@@ -1,6 +1,6 @@
 # HelloApp
 
-Materiał M01 – Android, start (Java). Aplikacja z jednym ekranem: nagłówek „Sklep 4TP”, krótki opis i przycisk „Start”, który pokazuje Toast „Wkrótce”.
+Materiał M01 – Android, start (Java). Aplikacja z jednym ekranem: nagłówek „Sklep 4A”, krótki opis i przycisk „Start”, który pokazuje Toast „Wkrótce”.
 
 ## Technologie
 
@@ -18,9 +18,7 @@ Materiał M01 – Android, start (Java). Aplikacja z jednym ekranem: nagłówek 
 
 ## Zadanie 2 – uruchomienie
 
-Zrzut ekranu z uruchomionej aplikacji: **DODAJ do `docs/`**.
-
-Telefon (jeśli uruchomiona na prawdziwym urządzeniu): **UZUPEŁNIJ model i wersję Androida**.
+Zrzut ekranu z uruchomionej aplikacji: **Słaby computer**.
 
 ## Zadanie 3 – mapa plików
 
@@ -47,9 +45,9 @@ Wersja z licznikiem (przyciski „Kliknij mnie” i „Reset”) jest w historii
 
 `Log.d` z tagiem `MainActivity` jest w `onCreate` i w obsłudze kliknięcia. W Logcat filtr: `tag:MainActivity` (albo `package:mine`).
 
-Celowy błąd: `findViewById` wywołane **przed** `setContentView` zwraca `null`, więc pierwsze użycie takiego pola kończy się `NullPointerException` i zamknięciem aplikacji. Stack trace: **WKLEJ własny z Logcat (zrzut ekranu do `docs/`)**.
+Celowy błąd: `findViewById` wywołane **przed** `setContentView` zwraca `null`, więc pierwsze użycie takiego pola kończy się `NullPointerException` i zamknięciem aplikacji. Stack trace: **Słaby computer**.
 
-Jedna linia o tym, która linia kodu zawiniła: **UZUPEŁNIJ według własnego stack trace** (to ta linia `MainActivity.java`, w której wywołano metodę na polu `null`).
+Jedna linia o tym, która linia kodu zawiniła: **Słaby computer** (to ta linia `MainActivity.java`, w której wywołano metodę na polu `null`).
 
 ## Zadanie 8 – obrót ekranu
 
