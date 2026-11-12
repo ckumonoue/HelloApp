@@ -3,7 +3,6 @@ package com.ckumonoue.helloapp;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,15 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    private TextView textGreeting;
-    private Button buttonClick;
-    private Button buttonReset;
-    private int clickCount = 0;
+    private Button buttonStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate, licznik = " + clickCount);
+        Log.d(TAG, "onCreate");
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -33,20 +29,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        textGreeting = findViewById(R.id.text_greeting);
-        buttonClick = findViewById(R.id.button_click);
-        buttonReset = findViewById(R.id.button_reset);
+        buttonStart = findViewById(R.id.button_start);
 
-        buttonClick.setOnClickListener(v -> {
-            clickCount++;
-            Log.d(TAG, "Kliknięto, licznik = " + clickCount);
-            textGreeting.setText(getString(R.string.clicked_times, clickCount));
-            Toast.makeText(this, R.string.clicked, Toast.LENGTH_SHORT).show();
-        });
-
-        buttonReset.setOnClickListener(v -> {
-            clickCount = 0;
-            textGreeting.setText(R.string.greeting);
+        buttonStart.setOnClickListener(v -> {
+            Log.d(TAG, "Kliknięto Start");
+            Toast.makeText(this, R.string.soon, Toast.LENGTH_SHORT).show();
         });
     }
 }

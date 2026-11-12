@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">HelloApp</string>
-    <string name="greeting">Hello, 4TP!</string>
-    <string name="button_click">Click me</string>
-    <string name="button_reset">Reset</string>
-    <string name="clicked">Clicked!</string>
-    <string name="clicked_times">Clicks: %1$d</string>
+    <string name="shop_title">4TP Shop</string>
+    <string name="shop_description">A small online shop made by class 4TP. In the next lessons the app will load products from our Django shop.</string>
+    <string name="button_start">Start</string>
+    <string name="soon">Coming soon</string>
 </resources>
