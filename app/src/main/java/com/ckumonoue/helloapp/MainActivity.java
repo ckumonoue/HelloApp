@@ -1,6 +1,7 @@
 package com.ckumonoue.helloapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
+
     private TextView textGreeting;
     private Button buttonClick;
     private Button buttonReset;
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate, licznik = " + clickCount);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonClick.setOnClickListener(v -> {
             clickCount++;
+            Log.d(TAG, "Kliknięto, licznik = " + clickCount);
             textGreeting.setText(getString(R.string.clicked_times, clickCount));
             Toast.makeText(this, R.string.clicked, Toast.LENGTH_SHORT).show();
         });
